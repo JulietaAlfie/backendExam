@@ -14,6 +14,7 @@
     <name>config-server</name>
     <description>config-server</description>
     <properties>
+        <maven.test.skip>true</maven.test.skip>
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
     </properties>
@@ -52,6 +53,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>spring-boot-web</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
